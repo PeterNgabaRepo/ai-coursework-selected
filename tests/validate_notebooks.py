@@ -9,8 +9,8 @@ NOTEBOOKS = [
     PROJECT_ROOT / "svm_digits" / "handwritten_digits_classification_svm_sklearn.ipynb",
 ]
 FORBIDDEN_PATTERNS = [
-    re.compile(r"/Users/"),
-    re.compile(r"/private/"),
+    re.compile("/" + "Users/"),
+    re.compile("/" + "private/"),
     re.compile(r"api[_ -]?key\s*=", re.IGNORECASE),
     re.compile(r"access[_ -]?token\s*=", re.IGNORECASE),
     re.compile(r"password\s*=", re.IGNORECASE),
